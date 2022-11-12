@@ -1,0 +1,17 @@
+body{
+			background-color: #C0C0C0;
+		}
+		
+		i:hover {
+ 			 cursor: pointer;
+		}
+		
+		.cursorP:hover{
+ 			 cursor: pointer;
+		}
+		
+		.formError {
+		    color: #dc3545;
+		    font-style: italic;
+		    font-weight: 600;
+		}

@@ -1,0 +1,30 @@
+spring:
+  devtools:
+    livereload:
+      port: 35729
+      enabled: true
+  mvc:
+    format:
+      date: dd-MM-yyyy
+      date-time: dd-MM-yyyy HH:mm:ss
+      time: HH:mm:ss
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/view/
+#      suffix: .jsp
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:h2:file:./db/fadeldemodb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: admin
+    password: admin
